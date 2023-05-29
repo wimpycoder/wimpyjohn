@@ -604,6 +604,71 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
         <!-- Core theme JS-->
         <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.6/dist/sweetalert2.all.min.js"></script>
+        <script>
+                const Toast = Swal.mixin({
+                toast: true,
+                position: 'top-end',
+                showConfirmButton: false,
+                timer: 3000,
+                timerProgressBar: true,
+                didOpen: (toast) => {
+                    toast.addEventListener('mouseenter', Swal.stopTimer)
+                    toast.addEventListener('mouseleave', Swal.resumeTimer)
+                }
+                });
+
+                const scriptURL = 'https://script.google.com/macros/s/AKfycbzqGA2W2gq2yrGwQF1O3e6bShurfcsqpet3zqJExA_fhkLB4TwbGRf3KhR650Ag3B27Cg/exec'
+                const form = document.forms['submit-to-google-sheet']
+                form.addEventListener('submit', e => {
+                ShowPageLoader();
+                e.preventDefault()
+                fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                    .then(
+                        response => { 
+                        HidePageLoader();
+                        form.reset();
+                        Toast.fire({
+                            icon: 'success',
+                            title: 'Email Sent Successfully!'
+                        })
+                        }
+                    )
+                    .catch(error => {
+                    console.error('Error!', error.message)
+                    Toast.fire({
+                            icon: 'error',
+                            title: error.message
+                    })
+                })
+                })
+
+                function HidePageLoader() {
+                    swal.close();
+                }
+
+                function ShowPageLoader() {
+                    Swal.fire({
+                        title: 'Please Wait!',
+                        html: 'Connecting to Email Server!',
+                        allowOutsideClick: false,
+                        showCancelButton: false,
+                        showConfirmButton: false,
+                        didOpen: () => {
+                            Swal.showLoading();
+                        },
+                        width: 600,
+                        padding: '3em',
+                        color: '#48AFC2',
+                        background: '#fff url(/images/trees.png)',
+                        backdrop:`
+                        rgba(100,161,157,0.4)
+                        url("/images/nyan-cat.gif")
+                        left top
+                        no-repeat
+                        `
+                    });
+                }
+        </script>
         <script src="js/scripts.js"></script>
     </body>
 </html>
