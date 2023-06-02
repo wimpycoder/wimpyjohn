@@ -11882,3 +11882,21 @@ footer.footer {
   padding-top: 4rem;
   padding-bottom: 4rem;
 }
+
+
+/*--------------------------------------------------------------
+# Gallery
+--------------------------------------------------------------*/
+.gallery-item {
+  overflow: hidden;
+  border-right: 3px solid #fff;
+  border-bottom: 3px solid #fff;
+}
+
+.gallery-item img {
+  transition: all ease-in-out 0.4s;
+}
+
+.gallery-item:hover img {
+  transform: scale(1.1);
+}
