@@ -1,123 +1,187 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <meta name="description" content="" />
-        <meta name="author" content="" />
-        <title>Wimpy Shop</title>
-        <!-- Favicon-->
-        <link rel="icon" type="image/x-icon" href="./vendor/sbshop/assets/favicon.ico" />
-        <!-- Bootstrap icons-->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
-        <!-- Core theme CSS (includes Bootstrap)-->
-        <link href="./vendor/sbshop/css/styles.css" rel="stylesheet" />
-    </head>
-    <body>
-        <!-- Navigation-->
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <div class="container px-4 px-lg-5">
-                <a class="navbar-brand" href="#!">Wimpy Shop</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4">
-                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="#!">Home</a></li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Category</a>
-                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item" href="#!">All Products</a></li>
-                                <li><hr class="dropdown-divider" /></li>
-                                <li><a class="dropdown-item" href="#!">Bike</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                    <!-- <form class="d-flex">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Wimpy Shop</title>
+    <!-- Favicon-->
+    <link rel="icon" type="image/x-icon" href="./vendor/sbshop/assets/favicon.ico" />
+    <!-- Bootstrap icons-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="./vendor/sbshop/css/styles.css" rel="stylesheet" />
+</head>
+
+<body>
+    <!-- Navigation-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container px-4 px-lg-5">
+            <a class="navbar-brand" href="#!">Wimpy Shop</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4">
+                    <li class="nav-item"><a class="nav-link active" aria-current="page" href="#!">Home</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">Category</a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#!">All Products</a></li>
+                            <li>
+                                <hr class="dropdown-divider" />
+                            </li>
+                            <li><a class="dropdown-item" href="#!">Bike</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <!-- <form class="d-flex">
                         <button class="btn btn-outline-dark" type="submit">
                             <i class="bi-cart-fill me-1"></i>
                             Cart
                             <span class="badge bg-dark text-white ms-1 rounded-pill">0</span>
                         </button>
                     </form> -->
-                </div>
             </div>
-        </nav>
-        <!-- Header-->
-        <header class="bg-dark py-5">
-            <div class="container px-4 px-lg-5 my-5">
-                <div class="text-center text-white">
-                    <h1 class="display-4 fw-bolder">The Wimpy Shop</h1>
-                    <p class="lead fw-normal text-white-50 mb-0">All your lifestyle needs at one place</p>
-                </div>
+        </div>
+    </nav>
+    <!-- Header-->
+    <header class="bg-dark py-5">
+        <div class="container px-4 px-lg-5 my-5">
+            <div class="text-center text-white">
+                <h1 class="display-4 fw-bolder">The Wimpy Shop</h1>
+                <p class="lead fw-normal text-white-50 mb-0">All your lifestyle needs at one place</p>
             </div>
-        </header>
-        <!-- Section-->
-        <section class="py-5">
-            <div class="container px-4 px-lg-5 mt-5">
-                <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
-                    <div class="col mb-5">
-                        <div class="card h-100">
-                            <!-- Product image-->
-                            <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">Sale</div>
-                            <img class="card-img-top" src="./shop/Bike/ToSeekCarbonFrame/TOSEEK Carbon Frame1.jpg" alt="..." />
-                            <!-- Product details-->
-                            <div class="card-body p-4">
-                                <div class="text-center">
-                                    <!-- Product name-->
-                                    <h5 class="fw-bolder">TOSEEK MTB Full Carbon Frame</h5>
-                                    <!-- Product reviews-->
-                                    <div class="d-flex justify-content-center small text-warning mb-2">
-                                        <div class="bi-star-fill"></div>
-                                        <div class="bi-star-fill"></div>
-                                        <div class="bi-star-fill"></div>
-                                        <div class="bi-star-fill"></div>
-                                        <div class="bi-star-fill"></div>
-                                    </div>
-                                    <!-- Product price-->
-                                    <b>SRP</b>
-                                    <span class="text-muted text-decoration-line-through">₱39,999</span>
-                                     ₱19,999
+        </div>
+    </header>
+    <!-- Section-->
+    <section class="py-5">
+        <div class="container px-4 px-lg-5 mt-5">
+            <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
+                <div class="col mb-5">
+                    <div class="card h-100">
+                        <!-- Product image-->
+                        <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">Sale
+                        </div>
+                        <img class="card-img-top" src="./shop/Bike/ToSeekCarbonFrame/TOSEEK Carbon Frame1.jpg"
+                            alt="..." />
+                        <!-- Product details-->
+                        <div class="card-body p-4">
+                            <div class="text-center">
+                                <!-- Product name-->
+                                <h5 class="fw-bolder">TOSEEK MTB Full Carbon Frame</h5>
+                                <!-- Product reviews-->
+                                <div class="d-flex justify-content-center small text-warning mb-2">
+                                    <div class="bi-star-fill"></div>
+                                    <div class="bi-star-fill"></div>
+                                    <div class="bi-star-fill"></div>
+                                    <div class="bi-star-fill"></div>
+                                    <div class="bi-star-fill"></div>
                                 </div>
+                                <!-- Product price-->
+                                <b>SRP</b>
+                                <span class="text-muted text-decoration-line-through">₱39,999</span>
+                                ₱19,999
                             </div>
-                            <!-- Product actions-->
-                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="./shop/Bike/toseekcarbonframe.html">View Product</a></div>
+                        </div>
+                        <!-- Product actions-->
+                        <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                            <div class="text-center"><a class="btn btn-outline-dark mt-auto"
+                                    href="./shop/Bike/toseekcarbonframe.html">View Product</a></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col mb-5">
+                    <div class="card h-100">
+                        <!-- Product image-->
+                        <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">Sale
+                        </div>
+                        <img class="card-img-top" src="./shop/Bike/ZTTOBikeSeatposttubeclip/seatposttubeclip4.jpg"
+                            alt="..." />
+                        <!-- Product details-->
+                        <div class="card-body p-4">
+                            <div class="text-center">
+                                <!-- Product name-->
+                                <h5 class="fw-bolder">ZTTO Seat Post Tube Clip</h5>
+                                <!-- Product reviews-->
+                                <div class="d-flex justify-content-center small text-warning mb-2">
+                                    <div class="bi-star-fill"></div>
+                                    <div class="bi-star-fill"></div>
+                                    <div class="bi-star-fill"></div>
+                                    <div class="bi-star-fill"></div>
+                                    <div class="bi-star-fill"></div>
+                                </div>
+                                <!-- Product price-->
+                                <b>SRP</b>
+                                <span class="text-muted text-decoration-line-through">₱348.82</span>
+                                ₱79.00
                             </div>
+                        </div>
+                        <!-- Product actions-->
+                        <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                            <div class="text-center"><a class="btn btn-outline-dark mt-auto"
+                                    href="./shop/Bike/zttobikeseatposttubeclip.html">View Product</a></div>
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
-        <section class="py-5 bg-light">
-            <div class="container px-4 px-lg-5 mt-5">
-                <h2 class="fw-bolder mb-4">Disclaimer</h2>
-                <div class="card text-white bg-secondary my-5 py-4 text-center">
-                    <div class="card-body">
-                        <p class="text-white m-0 ">Please note that we, <a href="./shop.html" style="color: orange;">Wimpyshop</a> , operate as an affiliate site and do not handle the product shipping or any refund-related matters directly. We serve as a platform that connects users to various sellers and merchants offering products or services. Therefore, we kindly request you to contact the respective seller or merchant directly for any inquiries, concerns, or issues regarding shipping, product delivery, or refunds.</p>
-                        <br>
-                        <p class="text-white m-0">We strive to provide accurate and up-to-date information about the products or services featured on our website. However, please be aware that we do not have control over the sellers' operations, inventory, or customer service. As such, any transactions or interactions between you, as the customer, and the seller are solely your responsibility.</p>
-                        <br>
-                        <p class="text-white m-0">While we make every effort to ensure that the information provided on our website is reliable and trustworthy, we cannot guarantee the accuracy, completeness, or timeliness of the details provided by the sellers. It is your responsibility to conduct your own research, verify the information, and exercise caution before making any purchase.</p>
-                        <br>
-                        <p class="text-white m-0">By using our website and engaging with the sellers featured on our platform, you acknowledge and agree that <a href="./shop.html" style="color: orange;">Wimpyshop</a>  shall not be held liable for any damages, losses, disputes, or issues arising from your interactions or transactions with the sellers. We encourage you to read the sellers' terms and conditions, shipping policies, and refund policies before making any purchase.</p>
-                        <br>
-                        <p class="text-white m-0">If you have any questions or require further information, please do not hesitate to reach out to us. We will do our best to assist you, keeping in mind that our scope of support is limited to general inquiries and website-related matters.</p>
-                        <br>
-                        <p class="text-white m-0">Thank you for your understanding and cooperation.</p>
-                        <br>
-                        <br>
-                        <br>
-                        <p class="text-white m-0"><a href="./shop.html" style="color: orange;">Wimpyshop</a>  Team</p>
-                    </div>
+        </div>
+    </section>
+    <section class="py-5 bg-light">
+        <div class="container px-4 px-lg-5 mt-5">
+            <h2 class="fw-bolder mb-4">Disclaimer</h2>
+            <div class="card text-white bg-secondary my-5 py-4 text-center">
+                <div class="card-body">
+                    <p class="text-white m-0 ">Please note that we, <a href="./shop.html"
+                            style="color: orange;">Wimpyshop</a> , operate as an affiliate site and do not handle the
+                        product shipping or any refund-related matters directly. We serve as a platform that connects
+                        users to various sellers and merchants offering products or services. Therefore, we kindly
+                        request you to contact the respective seller or merchant directly for any inquiries, concerns,
+                        or issues regarding shipping, product delivery, or refunds.</p>
+                    <br>
+                    <p class="text-white m-0">We strive to provide accurate and up-to-date information about the
+                        products or services featured on our website. However, please be aware that we do not have
+                        control over the sellers' operations, inventory, or customer service. As such, any transactions
+                        or interactions between you, as the customer, and the seller are solely your responsibility.</p>
+                    <br>
+                    <p class="text-white m-0">While we make every effort to ensure that the information provided on our
+                        website is reliable and trustworthy, we cannot guarantee the accuracy, completeness, or
+                        timeliness of the details provided by the sellers. It is your responsibility to conduct your own
+                        research, verify the information, and exercise caution before making any purchase.</p>
+                    <br>
+                    <p class="text-white m-0">By using our website and engaging with the sellers featured on our
+                        platform, you acknowledge and agree that <a href="./shop.html"
+                            style="color: orange;">Wimpyshop</a> shall not be held liable for any damages, losses,
+                        disputes, or issues arising from your interactions or transactions with the sellers. We
+                        encourage you to read the sellers' terms and conditions, shipping policies, and refund policies
+                        before making any purchase.</p>
+                    <br>
+                    <p class="text-white m-0">If you have any questions or require further information, please do not
+                        hesitate to reach out to us. We will do our best to assist you, keeping in mind that our scope
+                        of support is limited to general inquiries and website-related matters.</p>
+                    <br>
+                    <p class="text-white m-0">Thank you for your understanding and cooperation.</p>
+                    <br>
+                    <br>
+                    <br>
+                    <p class="text-white m-0"><a href="./shop.html" style="color: orange;">Wimpyshop</a> Team</p>
                 </div>
             </div>
-        </section>
-        <!-- Footer-->
-        <footer class="py-5 bg-dark">
-            <div class="container"><p class="m-0 text-center text-white">Copyright &copy; Wimpyshop 2023</p></div>
-        </footer>
-        <!-- Bootstrap core JS-->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-        <!-- Core theme JS-->
-        <script src="./vendor/sbshop/js/scripts.js"></script>
-    </body>
+        </div>
+    </section>
+    <!-- Footer-->
+    <footer class="py-5 bg-dark">
+        <div class="container">
+            <p class="m-0 text-center text-white">Copyright &copy; Wimpyshop 2023</p>
+        </div>
+    </footer>
+    <!-- Bootstrap core JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Core theme JS-->
+    <script src="./vendor/sbshop/js/scripts.js"></script>
+</body>
+
 </html>
