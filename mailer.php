@@ -1,7 +1,7 @@
 <?php
 
 // Replace these variables with your own recipient email address and email content
-$recipientEmail = 'recipient@example.com';
+$recipientEmail = 'act.jlogdonio@gmail.com';
 $subject = 'Test Email';
 $message = 'This is a test email sent from PHP using the mail() function.';
 
